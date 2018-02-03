@@ -1,0 +1,77 @@
+
+
+<p id="p1">Problem 1 <br></br>
+    Valid JavaScript data types: Boolean, number, object, string, undefined.
+    Addtionally, function is Function object (implements [[Call]] in ECMA-262 terms). That is why typeof(xx) return function where xx is a function defined in JavaScript.
+<script>
+var x0, x1 = 108, x2 = false, term = "spring semester";
+var people = {"firstName":"John", "lastName":"Doe", "age": 35};
+function square(edge) {return edge * edge};
+console.log(typeof(x0));
+console.log(typeof(x1));
+console.log(typeof(x2));
+console.log(typeof(x3));
+console.log(typeof(people));
+/* return output is function->Function object*/
+console.log(typeof(square));
+</script>
+</p>
+
+<p id="p2">Problem 2 
+    <br></br>
+    a. JSON.parse() is used to parse data and change to JSON. Most of the time, it converts data with type of string abstracted from website or server to JSON. Literally, JSON in JavaScript source is a JS object. However, the codes in a. already created one JS object which is interpreted by JavaScript interpreter. So, it gives the error unexpected token o. To make JSON.parse work, the value of var needs to be string that begins with ' and ends with '. We need place the full JSON string in quotes. In JSON object syntax, keys must be strings, so keys should be in quotes.
+<br></br>
+    b. To make JSON.parse work, the content of var needs be string that begins with ' and ends with '. Then /*...*/ comment parts should not be included in the value of var, otherwise, JSON.parse can not convert var to JS object according to the syntax. We need place the full JSON string in quotes. If we intend to include /*...*/ comment part as the value of JSON object, we should place that part in quote to make it a string and have a key for it.
+<br></br>
+    c. To make JSON.parse work, the content of var needs be string that begins with ' and ends with '. If it intends to build an array, then an array should begin with [ and end with ]. Values in it should be separated by ,(comma). We need place the full JSON string in quotes.
+<script>
+var a = '{ "name": "Data-driven web applications" }';
+JSON.parse(a);
+console.log(a);
+/* the next variable is a course number */
+var b = '{ "number": 3300 }';
+JSON.parse(b);
+console.log(b);   
+var c = '[ { "name": "DDWA", "number": 3300 }, { "name": "Java", "number": 2110 }, { "name": "Python", "number": 1110 }]';
+JSON.parse(c);
+console.log(c);
+</script>
+</p>
+
+<p id="p3">Problem 3
+    <br></br> See the console log.
+<script>
+
+var carclub  = [
+    {
+        "golden member": false,
+        "age":20,
+        "cars":[ "BMW M3", "Mini Cooper", "GM Truck" ],
+        "name":"John"
+        },
+   { 
+
+        "golden member": false,
+        "age":15,
+        "cars":[ "Mazda R8", "BMW 1966", "Benz" ],
+        "name": null
+        },
+   { 
+        "golden member": true,
+        "age":33,
+        "cars":[ "Accord 1980", "BMW 1987", "Jager x4" ],
+        "name":"Phoebe"
+        }
+    ]
+console.log(carclub);
+
+</script>
+</p>
+
+<p id="p4">Problem 4<br></br>
+Not submitting by the deadline or submiting a file which is not a correct work will led a zero instantly without exceptions. There is only very rare situation where professors and TA graders can accept work that not submitted correctly if students can provide files with proper timestamps. This does not include "last modified" date shown in file property of the laptop.<br></br> 
+In fact, I think we should not expect on these exceptions and situations. The best and worthy thing we should do is to start homework early, learn carefully, and accomplish as best as we can.
+
+<script>
+    </script>
+</p>
